@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Calculator {
-    Scanner input =new Scanner(System.in);
-    String Swith(){
+
+    String Swith(Scanner input){
         System.out.println("Choose the following index");
         System.out.println("1: +");
         System.out.println("2: -");
@@ -21,7 +21,20 @@ public class Calculator {
 
     }
 public static void main(String[] args) {
+    double num1;
+    double num2;
+    Scanner input =new Scanner(System.in);
     
+    System.out.println("Enter the First Number: ");
+    num1 = input.nextDouble();
+
+
+    System.out.println("Enter the Second Number: ");
+    num2=input.nextDouble();
+
+    Calculator calculator = new Calculator();
+    String operation = calculator.Swith(input);
+
 }
 
 }
