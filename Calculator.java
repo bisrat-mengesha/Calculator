@@ -32,8 +32,32 @@ public static void main(String[] args) {
     System.out.println("Enter the Second Number: ");
     num2=input.nextDouble();
 
+    Calculation calculation = new Calculation(num1,num2);
     Calculator calculator = new Calculator();
     String operation = calculator.Swith(input);
+
+    switch (operation) {
+        case "+":
+            System.out.println("Result: " + Calculation.Add(calculation.a, calculation.b));
+            break;
+        case "-":
+            System.out.println("Result: " + Calculation.Substract(calculation.a, calculation.b));
+            break;
+        case "*":
+            System.out.println("Result: " + Calculation.Multiple(calculation.a, calculation.b));
+            break;
+        case "/":
+            if (calculation.b == 0) {
+                System.out.println("Error: Division by zero is not allowed.");
+            } else {
+                System.out.println("Result: " + Calculation.Divition(calculation.a, calculation.b));
+            }
+        break;
+        default:
+            System.out.println("Invalid operation index.");
+            break;
+        }
+
 
 }
 
