@@ -38,6 +38,8 @@ class Calculation{
     static double Substract(double a,double b ){
         return a-b;
     }
-    
+    static double Multiple (double a,double b){
+        return a*b;
+    }
     
 }
