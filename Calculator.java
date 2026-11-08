@@ -35,5 +35,9 @@ class Calculation{
     static double Add(double a, double b) {
         return a+b;
     }
+    static double Substract(double a,double b ){
+        return a-b;
+    }
+    
     
 }
