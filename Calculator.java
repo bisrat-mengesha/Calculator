@@ -25,3 +25,15 @@ public static void main(String[] args) {
 }
 
 }
+class Calculation{
+    double a,b;
+    public Calculation(double a, double b){
+        this.a=a;
+        this.b=b;
+    }
+
+    static double Add(double a, double b) {
+        return a+b;
+    }
+    
+}
